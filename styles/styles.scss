@@ -107,16 +107,16 @@ section {
         align-items: center;
         margin: .7rem 0;
         box-shadow: var(--box-shadow-1) ;
-        i{
+        i {
             font-size: 1.2rem;
             color: var(--color-grey-2);
             pointer-events: none;
         }
-        .active-btn{
-            background-color: var(--color-secondary);
-            transition: all .4s ease-in-out;
-            i { color: var(--color-white); }
-        }
+    }
+    .active-btn {
+        background-color: var(--color-secondary);
+        transition: all .4s ease-in-out;
+        i { color: var(--color-white); }
     }
 }
 

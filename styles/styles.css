@@ -116,11 +116,11 @@ section {
   color: var(--color-grey-2);
   pointer-events: none;
 }
-.controls .control .active-btn {
+.controls .active-btn {
   background-color: var(--color-secondary);
   transition: all 0.4s ease-in-out;
 }
-.controls .control .active-btn i {
+.controls .active-btn i {
   color: var(--color-white);
 }
 
