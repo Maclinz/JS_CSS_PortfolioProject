@@ -7,7 +7,7 @@
 
 :root {
   --color-darkestgrey-variation-white: #191D2B;
-  --color-green-variation-pink: #27AE60;
+  --color-blue-variation-orange: #4F86F7;
   --color-white-variation-grey: #FFF;
   --color-black-invariable: #000;
   --color-white-grey-invariable: #F8F8F8;
@@ -23,7 +23,7 @@
 
 .light-mode {
   --color-darkestgrey-variation-white: #FFF;
-  --color-green-variation-pink: #F56692;
+  --color-blue-variation-orange: #F7C04F;
   --color-white-variation-grey: #454E56;
   --color-black-invariable: #000;
   --color-white-grey-invariable: #F8F8F8;
@@ -40,7 +40,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 1.1rem;
   color: var(--color-white-variation-grey);
-  transition: var(transition);
+  transition: var(--transition);
 }
 
 a {
@@ -101,7 +101,7 @@ section {
 #controls .control {
   padding: 1rem;
   cursor: pointer;
-  background-color: var(--color-darkgrey-invariable);
+  background-color: var(--color-darkgrey-variation-white-grey);
   width: 55px;
   height: 55px;
   border-radius: 50%;
@@ -113,11 +113,11 @@ section {
 }
 #controls .control i {
   font-size: 1.25rem;
-  color: var(--color-white-grey-invariable);
+  color: var(--color-lightgrey-variation-grey);
   pointer-events: none;
 }
 #controls .active-button {
-  background-color: var(--color-green-variation-pink);
+  background-color: var(--color-blue-variation-orange);
   transition: var(--transition);
 }
 #controls .active-button i {
