@@ -36,7 +36,7 @@
         width: 90%;
     }
 
-    .controlls{
+    .controls{
         top: auto;
         bottom: 0;
         flex-direction: row;
@@ -69,7 +69,7 @@
         padding-bottom: 6rem;
     }
 
-    .section{
+    .container{
         padding: 2rem 2.5rem !important;
     }
 
@@ -140,7 +140,7 @@
 }
 
 @media screen and (max-width:1432px){
-    .section{
+    .container{
         padding: 7rem 11rem;
     }
 
@@ -220,7 +220,7 @@
 }
 
 @media screen and (max-width:970px){
-    .section{
+    .container{
         padding: 7rem 6rem;
     }
     .about-container .left-about{
@@ -254,7 +254,7 @@
     }
 }
 @media screen and (max-width:700px){
-    .section{
+    .container{
         padding: 7rem 3rem;
     }
     .about-stats .progress-bars{
