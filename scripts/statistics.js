@@ -3,10 +3,14 @@
         "HTML5": "80%",
         "CSS3": "95%",
         "JavaScript": "75%",
-        "React JS": "75%",
-        "Node JS": "87%",
+        "React": "75%",
+        "NodeJS": "87%",
         "Python": "70%"
-        // Skills can be added here.
+        /*
+        Skills can be added here.
+        The image use for the skills are from the following website: https://devicon.dev/
+        Please, use the same naming as the website.
+        */
     }
 
     const create = {
@@ -20,20 +24,20 @@
     for (const [label, progression] of Object.entries(skills)) {
         const skill = {
             element: create.element("div", "skill"),
-            title: create.element("p", "skill-title"),
+            image: create.element("img", "skill-image"),
             container: {
                 element: create.element("div", "skill-container"),
                 text: create.element("p", "skill-container-text"),
                 indicator : create.element("div", "skill-container-indicator")
             }
         }
-        skill.title.innerHTML = label;
+        skill.image.src = `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${label.toLowerCase()}/${label.toLowerCase()}-original.svg`
         skill.container.text.innerHTML = progression;
         const span = document.createElement("span");
         span.style.width = progression;
         skill.container.indicator.append(span);
         skill.container.element.append(skill.container.text, skill.container.indicator);
-        skill.element.append(skill.title, skill.container.element);
+        skill.element.append(skill.image, skill.container.element);
         document.querySelector("#progress").append(skill.element);
     }
 })();

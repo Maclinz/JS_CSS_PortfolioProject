@@ -70,10 +70,7 @@
     .skill {
       display: flex;
       flex-direction: column;
-      &-title {
-        text-transform: uppercase;
-        font-weight: 500;
-      }
+      &-image { width: 40px; }
       &-container {
         display: flex;
         align-items: center;

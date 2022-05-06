@@ -346,9 +346,8 @@ section.container {
   display: flex;
   flex-direction: column;
 }
-#about-statistics #progress .skill-title {
-  text-transform: uppercase;
-  font-weight: 500;
+#about-statistics #progress .skill-image {
+  width: 40px;
 }
 #about-statistics #progress .skill-container {
   display: flex;
