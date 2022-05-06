@@ -1,0 +1,37 @@
+.cv {
+  display: flex;
+  align-self: flex-start;
+  &-link {
+    border-radius: 30px;
+    color: inherit;
+    font-weight: 600;
+    border: 1px solid var(--color-secondary);
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    &-text { padding: 0 2rem; }
+    &-icon {
+      background-color: var(--color-secondary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      padding: 1rem;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      transform: translateX(100%);
+      transition: var(--transition);
+      background-color: var(--color-secondary);
+      z-index: -5;
+    }
+    &:hover:before { transform: translateX(0); }
+  }
+}

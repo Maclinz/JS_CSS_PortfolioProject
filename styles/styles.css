@@ -206,7 +206,11 @@ section.container {
   line-height: 2rem;
 }
 
-#cv-link {
+.cv {
+  display: flex;
+  align-self: flex-start;
+}
+.cv-link {
   border-radius: 30px;
   color: inherit;
   font-weight: 600;
@@ -217,10 +221,10 @@ section.container {
   position: relative;
   overflow: hidden;
 }
-#cv-link-text {
+.cv-link-text {
   padding: 0 2rem;
 }
-#cv-link-icon {
+.cv-link-icon {
   background-color: var(--color-secondary);
   display: flex;
   align-items: center;
@@ -228,7 +232,7 @@ section.container {
   border-radius: 50%;
   padding: 1rem;
 }
-#cv-link:before {
+.cv-link:before {
   content: "";
   position: absolute;
   top: 0;
@@ -240,7 +244,7 @@ section.container {
   background-color: var(--color-secondary);
   z-index: -5;
 }
-#cv-link:hover:before {
+.cv-link:hover:before {
   transform: translateX(0);
 }
 
