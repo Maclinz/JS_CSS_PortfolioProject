@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <script src="app.js" defer></script>
+    <script src="scripts/controls.js" defer></script>
+    <script src="scripts/statistics.js" defer></script>
 </head>
 <body class="main-content">
     <header class="container active" id="home">
@@ -36,114 +37,54 @@
     <main>
         <section class="container about" id="about">
             <div class="main-title">
-                <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
+                <h2>About <span>me</span><span class="background-text">My stats</span></h2>
             </div>
-            <div class="about-container">
-                <div class="left-about">
-                    <h4>Information About me</h4>
+            <div id="about-header">
+                <article id="about-header-left">
+                    <h4>Information about me</h4>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Eveniet labore nihil obcaecati consequatur. Debitis error doloremque, 
-                        vero eos vel nemo eius voluptatem dicta tenetur modi. <br /> <br /> La musica
-                        delectus dolore fugiat exercitationem a, 
-                        ipsum quidem quo enim natus accusamus labore dolores nam. Unde.
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                        Harum non necessitatibus deleniti eum soluta.
+                        [This part will be filled with information.]
+                        <br><br>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt id in natus nihil rem rerum.
+                        <br><br>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur deserunt, exercitationem illo quae quis rerum?
                     </p>
                     <div class="cv">
-                        <a href="#" class="cv-link">
-                            <span class="cv-link-text">Download CV</span>
-                            <span class="cv-link-icon"><i class="fas fa-download"></i></span>
-                        </a>
+                        <a href="#" class="cv-link" target="_blank"><span class="cv-link-text">Download CV</span><span class="cv-link-icon"><i class="fas fa-download"></i></span></a>
                     </div>
-                </div>
-                <div class="right-about">
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">650+</p>
-                            <p class="small-text">Projects <br /> Completed</p>
+                </article>
+                <article id="about-header-right">
+                    <div class="about-header-item">
+                        <div class="about-header-item-text">
+                            <p class="about-header-item-text-large">650+</p>
+                            <p class="about-header-item-text-small">Projects completed</p>
                         </div>
                     </div>
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">10+</p>
-                            <p class="small-text">Years of <br /> experience</p>
+                    <div class="about-header-item">
+                        <div class="about-header-item-text">
+                            <p class="about-header-item-text-large">10+</p>
+                            <p class="about-header-item-text-small">Years of experience</p>
                         </div>
                     </div>
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">300+</p>
-                            <p class="small-text">Happy <br /> Clients</p>
+                    <div class="about-header-item">
+                        <div class="about-header-item-text">
+                            <p class="about-header-item-text-large">300+</p>
+                            <p class="about-header-item-text-small">Happy clients</p>
                         </div>
                     </div>
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">400+</p>
-                            <p class="small-text">Customer <br /> reviews</p>
+                    <div class="about-header-item">
+                        <div class="about-header-item-text">
+                            <p class="about-header-item-text-large">400+</p>
+                            <p class="about-header-item-text-small">Customers reviews</p>
                         </div>
                     </div>
-                </div>
+                </article>
             </div>
-            <div class="about-stats">
-                <h4 class="stat-title">My Skills</h4>
-                <div class="progress-bars">
-                    <div class="progress-bar">
-                        <p class="prog-title">html5</p>
-                        <div class="progress-con">
-                            <p class="prog-text">80%</p>
-                            <div class="progress">
-                                <span class="html"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">css3</p>
-                        <div class="progress-con">
-                            <p class="prog-text">95%</p>
-                            <div class="progress">
-                                <span class="css"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">javascript</p>
-                        <div class="progress-con">
-                            <p class="prog-text">75%</p>
-                            <div class="progress">
-                                <span class="js"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">ReactJS</p>
-                        <div class="progress-con">
-                            <p class="prog-text">75%</p>
-                            <div class="progress">
-                                <span class="react"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">NodeJS</p>
-                        <div class="progress-con">
-                            <p class="prog-text">87%</p>
-                            <div class="progress">
-                                <span class="node"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Python</p>
-                        <div class="progress-con">
-                            <p class="prog-text">70%</p>
-                            <div class="progress">
-                                <span class="python"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div id="about-statistics">
+                <h4 class="about-title">My Skills</h4>
+                <div id="progress"></div>
             </div>
-            <h4 class="stat-title">My Timeline</h4>
+            <h4 class="about-title">My Timeline</h4>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="tl-icon">

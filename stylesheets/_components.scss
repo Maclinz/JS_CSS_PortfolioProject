@@ -44,16 +44,16 @@
     font-size: 4rem;
     font-weight: 700;
     span { color: var(--color-secondary); }
-    .bg-text {
+    .background-text {
       position: absolute;
       top: 50%;
       left: 50%;
       color: var(--color-grey-5);
-      transition: all .4s ease-in-out;
-      z-index: -1;
+      transition: var(--transition);
       transform: translate(-50%, -50%);
       font-weight: 800;
-      font-size: 6.3rem;
+      font-size: 6rem;
+      z-index: -5;
     }
   }
 }
