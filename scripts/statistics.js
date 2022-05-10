@@ -38,7 +38,7 @@
         skill.container.indicator.append(span);
         skill.container.element.append(skill.container.text, skill.container.indicator);
         skill.element.append(skill.image, skill.container.element);
-        document.querySelector("#progress").append(skill.element);
+        document.querySelector("#statistics").append(skill.element);
     }
 })();
 
