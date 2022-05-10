@@ -7,7 +7,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 2rem;
-    .about-header-item {
+    .header-item {
       border: 1px solid var(--color-grey-5);
       border-radius: 5px;
       transition: var(--transition);
