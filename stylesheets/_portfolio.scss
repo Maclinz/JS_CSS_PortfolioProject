@@ -1,0 +1,69 @@
+@import './mixins';
+
+#portfolio {
+  &-subtitle {
+    padding: 2rem 0;
+    text-align: center;
+  }
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin-top: 3rem;
+    .portfolio-item {
+      position: relative;
+      &-image {
+        img {
+          width: 100%;
+          height: 250px;
+          object-fit: cover;
+          border-radius: 15px;
+        }
+      }
+      &-hover {
+        width: 100%;
+        height: 100%;
+        @include absolute-top-left;
+        background-color: var(--color-secondary);
+        border-radius: 15px;
+        @include flex-center;
+        flex-direction: column;
+        opacity: 0;
+        transform: scale(0);
+        transition: var(--transition);
+        h3 {
+          font-size: 1.5rem;
+          color: var(--color-white);
+          margin-bottom: 1.5rem;
+        }
+        &-icons {
+          @include flex-center;
+          a {
+            background-color: var(--color-primary);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            @include flex-center;
+            margin: 0 1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            i {
+              font-size: 1.5rem;
+              color: var(--color-white);
+              margin: 0 1rem;
+              transition: var(--transition);
+            }
+            &:hover {
+              background-color: var(--color-white);
+              i { color: var(--color-secondary); }
+            }
+          }
+        }
+      }
+      &:hover .portfolio-item-hover {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  }
+}

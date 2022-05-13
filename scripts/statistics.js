@@ -22,26 +22,19 @@
     }
 
     for (const [label, progression] of Object.entries(skills)) {
-        const skill = {
-            element: create.element("div", "skill"),
-            image: create.element("img", "skill-image"),
-            container: {
-                element: create.element("div", "skill-container"),
-                text: create.element("p", "skill-container-text"),
-                indicator : create.element("div", "skill-container-indicator")
-            }
-        }
-        skill.image.src = `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${label.toLowerCase()}/${label.toLowerCase()}-original.svg`
-        skill.container.text.innerHTML = progression;
+        const skill = create.element("article", "skill");
+        const image = create.element("article", "skill");
+        image.src = `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${label.toLowerCase()}/${label.toLowerCase()}-original.svg`;
+        const container = create.element("div", "skill-container");
+        const text = create.element("p", "skill-container-text");
+        text.innerHTML = progression;
+        const indicator = create.element("div", "skill-container-indicator");
         const span = document.createElement("span");
         span.style.width = progression;
-        skill.container.indicator.append(span);
-        skill.container.element.append(skill.container.text, skill.container.indicator);
-        skill.element.append(skill.image, skill.container.element);
-        document.querySelector("#statistics").append(skill.element);
+        indicator.append(span);
+        container.append(text, indicator);
+        skill.append(image, container);
+        document.querySelector("#statistics").append(skill);
     }
 })();
-
-
-
 

@@ -1,0 +1,20 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin absolute-top {
+  position: absolute;
+  top: 0;
+}
+
+@mixin absolute-top-left {
+  @include absolute-top;
+  left: 0;
+}
+
+@mixin absolute-top-right {
+  @include absolute-top;
+  right: 0;
+}

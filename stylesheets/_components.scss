@@ -1,3 +1,5 @@
+@import './mixins';
+
 .cv {
   display: flex;
   align-self: flex-start;
@@ -14,17 +16,13 @@
     &-text { padding: 0 2rem; }
     &-icon {
       background-color: var(--color-secondary);
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @include flex-center;
       border-radius: 50%;
       padding: 1rem;
     }
     &:before {
       content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
+      @include absolute-top-right;
       height: 100%;
       width: 100%;
       transform: translateX(100%);

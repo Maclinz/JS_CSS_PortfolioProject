@@ -1,3 +1,5 @@
+@import './mixins';
+
 #header-content {
   width: 100%;
   display: grid;
@@ -12,9 +14,7 @@
       width: 65%;
       height: 100%;
       background-color: var(--color-secondary);
-      position: absolute;
-      left: 0;
-      top: 0;
+      @include absolute-top-left;
       z-index: -5;
       clip-path: polygon(0 0, 45% 0, 80% 100%, 0% 100%);
     }

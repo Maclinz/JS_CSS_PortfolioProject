@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="stylesheets/styles.min.css">
     <script src="scripts/controls.js" defer></script>
     <script src="scripts/statistics.js" defer></script>
+    <script src="scripts/portfolio.js" defer></script>
 </head>
 <body class="main-content">
     <header class="container active" id="home">
@@ -19,7 +20,7 @@
             <article id="header-content-left">
                 <div id="header-content-left-shape"></div>
                 <div id="header-content-left-image">
-                    <img src="./img/hero.png" alt="A photography of myself~">
+                    <img src="images/hero.png" alt="A photography of myself~">
                 </div>
             </article>
             <article id="header-content-right">
@@ -152,155 +153,19 @@
         </section>
         <section class="container" id="portfolio">
             <div class="main-title">
-                <h2>My <span>Portfolio</span><span class="bg-text">My Work</span></h2>
+                <h2>My <span>Portfolio</span><span class="background-text">My Work</span></h2>
             </div>
-            <p class="port-text">
-                Here is some of my work that I've done in various programming languages.
-            </p>
-            <div class="portfolios">
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port1.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="#" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port2.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="#" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port3.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="#" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port4.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="#" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port5.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="#" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port2.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="#" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port7.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="#" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <p id="portfolio-subtitle">Here is a sample of minor project that I've done in various programming languages.</p>
+            <div id="portfolio-container"></div>
         </section>
         <section class="container" id="blogs">
             <div class="blogs-content">
                 <div class="main-title">
-                    <h2>My <span>Blogs</span><span class="bg-text">My Blogs</span></h2>
+                    <h2>My <span>Blogs</span><span class="background-text ">My Blogs</span></h2>
                 </div>
                 <div class="blogs">
                     <div class="blog">
-                        <img src="img/port6.jpg" alt="">
+                        <img src="images/portfolio/port6.jpg" alt="">
                         <div class="blog-text">
                             <h4>
                                 How to Create Your Own Website
@@ -312,7 +177,7 @@
                         </div>
                     </div>
                     <div class="blog">
-                        <img src="img/blog1.jpg" alt="">
+                        <img src="images/blog1.jpg" alt="">
                         <div class="blog-text">
                             <h4>
                                 How to Become an Expert in Web Design
@@ -324,7 +189,7 @@
                         </div>
                     </div>
                     <div class="blog">
-                        <img src="img/blog2.jpg" alt="">
+                        <img src="images/blog2.jpg" alt="">
                         <div class="blog-text">
                             <h4>
                                 Become a Web Designer in 10 Days
@@ -336,7 +201,7 @@
                         </div>
                     </div>
                     <div class="blog">
-                        <img src="img/blog3.jpg" alt="">
+                        <img src="images/blog3.jpg" alt="">
                         <div class="blog-text">
                             <h4>
                                 Debbuging made easy with Web Inspector
@@ -348,7 +213,7 @@
                         </div>
                     </div>
                     <div class="blog">
-                        <img src="img/port1.jpg" alt="">
+                        <img src="images/portfolio/port1.jpg" alt="">
                         <div class="blog-text">
                             <h4>
                                 Get started with Web Design and UI Design
@@ -360,7 +225,7 @@
                         </div>
                     </div>
                     <div class="blog">
-                        <img src="img/port3.jpg" alt="">
+                        <img src="images/portfolio/port3.jpg" alt="">
                         <div class="blog-text">
                             <h4>
                                 This is what you need to know about Web Design
@@ -377,7 +242,7 @@
         <section class="container contact" id="contact">
             <div class="contact-container">
                 <div class="main-title">
-                    <h2>Contact <span>Me</span><span class="bg-text">Contact</span></h2>
+                    <h2>Contact <span>Me</span><span class="background-text ">Contact</span></h2>
                 </div>
                 <div class="contact-content-con">
                     <div class="left-contact">

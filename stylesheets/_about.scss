@@ -1,3 +1,5 @@
+@import './mixins';
+
 #about-header {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -33,12 +35,11 @@
           font-size: 1.2rem;
           color: var(--color-grey-1);
           letter-spacing: 2px;
-
           &:before {
             content: "";
             position: absolute;
-            left: 0;
             top: 15px;
+            left: 0;
             width: 2rem;
             height: 2px;
             background-color: var(--color-grey-5);
@@ -82,9 +83,7 @@
           margin-left: 1rem;
           position: relative;
           span {
-            position: absolute;
-            top: 0;
-            left: 0;
+            @include absolute-top-left;
             height: 100%;
             background-color: var(--color-secondary);
           }
@@ -105,16 +104,13 @@
       padding-left: 3rem;
       border-left: 1px solid var(--color-grey-5);
       &-icon {
-        position: absolute;
+        @include absolute-top;
         left: -27px;
-        top: 0;
         background-color: var(--color-secondary);
         width: 50px;
         height: 50px;
         border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center;
         i { font-size: 1.3rem; }
       }
       &-duration {
@@ -150,9 +146,8 @@
   position: relative;
   &::before {
     content: '';
-    position: absolute;
+    @include absolute-top;
     left: 50%;
-    top: 0;
     width: 40%;
     height: 1px;
     background-color: var(--color-grey-5);
