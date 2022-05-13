@@ -64,9 +64,7 @@ section.container {
 
 //Blogs Section
 .blogs {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
+    @include grid-columns(3);
     margin-top: 3rem;
     .blog {
         position: relative;

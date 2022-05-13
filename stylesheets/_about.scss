@@ -1,14 +1,11 @@
 @import './mixins';
 
 #about-header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  @include grid-columns(2);
   padding-top: 3.5rem;
   padding-bottom: 5rem;
   &-right {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2rem;
+    @include grid-columns(2);
     .header-item {
       border: 1px solid var(--color-grey-5);
       border-radius: 5px;
@@ -65,9 +62,7 @@
 #about-statistics {
   padding-bottom: 4rem;
   #statistics {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2rem;
+    @include grid-columns(2);
     .skill {
       display: flex;
       flex-direction: column;
@@ -96,9 +91,7 @@
 #about-timeline {
   padding-bottom: 3rem;
   #timeline {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
+    @include grid-columns(2);
     .timeline-item {
       position: relative;
       padding-left: 3rem;

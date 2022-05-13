@@ -6,9 +6,7 @@
     text-align: center;
   }
   &-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
+    @include grid-columns(3);
     margin-top: 3rem;
     .portfolio-item {
       position: relative;

@@ -18,3 +18,9 @@
   @include absolute-top;
   right: 0;
 }
+
+@mixin grid-columns($columns) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  grid-gap: 2rem;
+}
