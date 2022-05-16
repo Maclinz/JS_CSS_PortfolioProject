@@ -20,6 +20,7 @@ import { articles } from "./data/articles.js";
         link.innerHTML = article.title;
         h4.append(link);
         const paragraph = document.createElement("p");
+        paragraph.innerHTML = article.summary;
         text.append(h4, paragraph);
         item.append(image, text);
         document.querySelector("#articles").append(item);
