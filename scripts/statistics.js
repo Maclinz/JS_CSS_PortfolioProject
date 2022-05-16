@@ -22,7 +22,7 @@
     }
 
     for (const [label, progression] of Object.entries(skills)) {
-        const skill = create.element("article", "skill");
+        const item = create.element("article", "skill");
         const image = create.element("img", "skill-image");
         image.src = `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${label.toLowerCase()}/${label.toLowerCase()}-original.svg`;
         const container = create.element("div", "skill-container");
@@ -33,8 +33,8 @@
         span.style.width = progression;
         indicator.append(span);
         container.append(text, indicator);
-        skill.append(image, container);
-        document.querySelector("#statistics").append(skill);
+        item.append(image, container);
+        document.querySelector("#statistics").append(item);
     }
 })();
 
