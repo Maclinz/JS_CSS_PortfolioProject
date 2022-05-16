@@ -1,0 +1,50 @@
+@import './mixins';
+
+#articles {
+  @include grid-columns(3);
+  margin-top: 3rem;
+  .article {
+    position: relative;
+    background-color: var(--color-grey-5);
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px rgba(0,0,0,.1);
+    transition: var(--transition);
+    img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 5px 5px 0 0;
+      filter: grayscale(100%);
+      transition: var(--transition);
+    }
+    .article-text {
+      margin-top: -7px;
+      padding: 1.1rem;
+      border-top: 8px solid var(--color-secondary);
+      h4 {
+        font-size: 1.5rem;
+        margin-bottom: .7rem;
+        a {
+          transition: var(--transition);
+          cursor: pointer;
+          &:hover { color: var(--color-secondary); }
+        }
+      }
+      p{
+        color: var(--color-grey-2);
+        line-height: 2rem;
+        padding-bottom: 1rem;
+      }
+    }
+    &:hover {
+      box-shadow: var(--box-shadow);
+      transform: translateY(-5px);
+      transition: var(--transition);
+      img {
+        filter: grayscale(0);
+        transform: scale(1.1);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.8);
+      }
+    }
+  }
+}
