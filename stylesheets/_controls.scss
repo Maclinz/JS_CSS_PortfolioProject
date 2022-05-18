@@ -32,9 +32,7 @@
 #switch-mode {
   top: 5%;
   right: 3%;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
+  @include round-icon(70px);
   background-color: var(--color-grey-4);
   cursor: pointer;
   position: fixed;
