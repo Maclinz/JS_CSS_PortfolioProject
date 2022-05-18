@@ -8,41 +8,41 @@
   @include flex-center;
   flex-direction: column;
   transform: translateY(-50%);
-  .control{
+  .control {
     padding: 1rem;
     cursor: pointer;
-    background-color: var(--color-grey-4);
+    background-color: var(--color-grey-5);
     @include round-icon(55px);
     @include flex-center;
-    margin: .7rem 0;
-    box-shadow: var(--box-shadow-1) ;
+    margin: .75rem 0;
+    box-shadow: var(--box-shadow);
     i {
-      font-size: 1.2rem;
-      color: var(--color-grey-2);
+      font-size: 1.25rem;
+      color: var(--color-grey-1);
       pointer-events: none;
     }
   }
   .active-button {
     background-color: var(--color-secondary);
-    transition: all .4s ease-in-out;
+    transition: var(--transition);
     i { color: var(--color-white); }
   }
 }
 
 #switch-mode {
   top: 5%;
-  right: 3%;
+  right: 2.5%;
   @include round-icon(70px);
-  background-color: var(--color-grey-4);
+  border: 2px solid var(--color-grey-1);
+  background-color: var(--color-grey-5);
   cursor: pointer;
   position: fixed;
   @include flex-center;
   box-shadow: 0 3px 15px rgba(0,0,0,.3);
   transition: all .1s ease-in-out;
-  &:active{ transform: translateY(-3px); }
-  i{
-    font-size: 1.4rem;
-    color: var(--color-grey-2);
+  i {
+    font-size: 1.75rem;
+    color: var(--color-grey-1);
     pointer-events: none;
   }
 }
