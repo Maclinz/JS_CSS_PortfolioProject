@@ -1,0 +1,75 @@
+@import './mixins';
+
+#contact-content {
+  display: flex;
+  padding-top: 3.5rem;
+  &-left {
+    flex: 2;
+    h4 {
+      margin-top: 1rem;
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+    > p {
+      margin: 1rem 0;
+      line-height: 2rem;
+    }
+    &-information {
+      .contact-item {
+        @include flex-center-vertical;
+        justify-content: space-between;
+        > p { margin: 0.25rem 0; }
+        &-icon p {
+          display: grid;
+          grid-template-columns: 40px 1fr;
+          i {
+            @include flex-center-vertical;
+            font-size: 1.25rem;
+          }
+        }
+      }
+    }
+    &-social {
+      display: flex;
+      margin-top: 2rem;
+      a {
+        @include flex-center;
+        color: var(--color-white);
+        background-color: var(--color-grey-5);
+        @include round-icon;
+        margin-inline: 0.5rem;
+        transition: var(--transition);
+        &:hover {
+          background-color: var(--color-secondary);
+          color: var(--color-primary);
+          i {
+            @include flex-center;
+            font-size: 1.25rem;
+          }
+        }
+      }
+    }
+  }
+  &-right {
+    flex: 3;
+    margin-left: 3rem;
+    .input-control {
+      margin: 1.5rem 0;
+      input, textarea {
+        border-radius: 30px;
+        font: inherit;
+        padding: .75rem 1.25rem;
+        outline: none;
+        border: none;
+        background-color: var(--color-grey-5);
+        width: 100%;
+        color: var(--color-white);
+        resize: none;
+      }
+      &-flex {
+        display: flex;
+        gap: 1.5rem;
+      }
+    }
+  }
+}

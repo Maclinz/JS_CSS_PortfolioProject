@@ -5,8 +5,7 @@
   @include grid-columns(2);
   height: 100vh;
   &-left {
-    display: flex;
-    align-items: center;
+    @include flex-center-vertical;
     position: relative;
     &-shape {
       transition: var(--transition);

@@ -12,9 +12,7 @@
     padding: 1rem;
     cursor: pointer;
     background-color: var(--color-grey-4);
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
+    @include round-icon(55px);
     @include flex-center;
     margin: .7rem 0;
     box-shadow: var(--box-shadow-1) ;

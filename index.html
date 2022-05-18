@@ -7,9 +7,9 @@
     <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="stylesheets/styles.min.css">
+    <link rel="stylesheet" href="stylesheets/index.min.css">
     <script src="scripts/controls.js" defer></script>
     <script src="scripts/statistics.js" type="module" defer></script>
     <script src="scripts/portfolio.js" type="module" defer></script>
@@ -168,101 +168,76 @@
             </div>
         </section>
         <section class="container contact" id="contact">
-            <div class="contact-container">
-                <div class="main-title">
-                    <h2>Contact <span>Me</span><span class="background-text ">Contact</span></h2>
+            <div class="main-title">
+                <h2>My <span>Coordinates</span><span class="background-text">Contact</span></h2>
+            </div>
+            <div id="contact-content">
+                <div id="contact-content-left">
+                    <h4>Contact me here</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, veritatis.</p>
+                    <div id="contact-content-left-information">
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <p><i class="fas fa-map-marker-alt"></i> <span>Location:</span></p>
+                            </div>
+                            <p>London, united Kingdom</p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <p><i class="fas fa-envelope"></i> <span>Email:</span></p>
+                            </div>
+                            <p>maclinzuniversal@gmail.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <p><i class="fas fa-user-graduate"></i> <span>Education:</span></p>
+                            </div>
+                            <p>Sussex University, East Sussex</p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <p><i class="fa-solid fa-mobile"></i> <span>Phone number:</span></p>
+                            </div>
+                            <p>07522670617</p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-item-icon">
+                                <p><i class="fa-solid fa-language"></i> <span>Languages:</span></p>
+                            </div>
+                            <p>Afrikaans, English, Spanish</p>
+                        </div>
+                    </div>
+                    <div id="contact-content-left-social">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
                 </div>
-                <div class="contact-content-con">
-                    <div class="left-contact">
-                        <h4>Contact me here</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            In, laborum numquam? Quam excepturi perspiciatis quas quasi.
-                        </p>
-                        <div class="contact-info">
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span>Location</span>
-                                </div>
-                                <p>
-                                    : London, united Kingdom
-                                </p>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-envelope"></i>
-                                    <span>Email</span>
-                                </div>
-                                <p>
-                                    <span>: maclinzuniversal@gmail.com</span>
-                                </p>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-user-graduate"></i>
-                                    <span>Education</span>
-                                </div>
-                                <p>
-                                    <span>: Sussex University, East Sussex</span>
-                                </p>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-user-graduate"></i>
-                                    <span>Mobile Number</span>
-                                </div>
-                                <p>
-                                    <span>: 07522670617</span>
-                                </p>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-globe-africa"></i>
-                                    <span>Languages</span>
-                                </div>
-                                <p>
-                                    <span>: Afrikaans, English, Spanish</span>
-                                </p>
-                            </div>
+                <div id="contact-content-right">
+                    <form action="" id="contact-content-right-form">
+                        <div class="input-control input-control-flex">
+                            <label>
+                                <input type="text" required placeholder="YOUR NAME~">
+                            </label>
+                            <label>
+                                <input type="email" required placeholder="YOUR EMAIL~">
+                            </label>
                         </div>
-                        <div class="contact-icons">
-                            <div class="contact-icon">
-                                <a href="www.facebook.com" target="_blank">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-youtube"></i>
-                                </a>
-                            </div>
+                        <div class="input-control">
+                            <label>
+                                <input type="text" required placeholder="ENTER SUBJECT~">
+                            </label>
                         </div>
-                    </div>
-                    <div class="right-contact">
-                        <form action="" class="contact-form">
-                            <div class="input-control i-c-2">
-                                <input type="text" required placeholder="YOUR NAME">
-                                <input type="email" required placeholder="YOUR EMAIL">
-                            </div>
-                            <div class="input-control">
-                                <input type="text" required placeholder="ENTER SUBJECT">
-                            </div>
-                            <div class="input-control">
-                                <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
-                            </div>
-                            <div class="submit-btn">
-                                <a href="#" class="main-btn">
-                                    <span class="btn-text">Download CV</span>
-                                    <span class="btn-icon"><i class="fas fa-download"></i></span>
-                                </a>
-                            </div>
-                        </form>
-                    </div>
+                        <div class="input-control">
+                            <label>
+                                <textarea  cols="15" rows="8" placeholder="YOUR MESSAGE~"></textarea>
+                            </label>
+                        </div>
+                        <div class="cv">
+                            <a href="#" class="cv-link" target="_blank"><span class="cv-link-text">Download CV</span><span class="cv-link-icon"><i class="fas fa-download"></i></span></a>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
