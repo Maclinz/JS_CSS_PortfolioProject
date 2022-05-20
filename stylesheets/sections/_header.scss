@@ -53,16 +53,17 @@
       line-height: 2rem;
     }
     @media screen and (max-width: 1200px) {
-      grid-row: 1;
       width: 90%;
       margin: 2.5rem auto;
       padding : 0;
     }
   }
   @media screen and (max-width: 1200px){
-    grid-template-columns: 1fr;
-    padding-bottom: 6rem;
     text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
     .cv { align-self: center;}
   }
 }
