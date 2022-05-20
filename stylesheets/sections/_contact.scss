@@ -93,4 +93,10 @@
     }
   }
   @media screen and (max-width: 1600px) { flex-direction: column; }
+  @media screen and (max-width: 1200px) {
+    .cv {
+      width: 100%;
+      &-link{ margin-inline: auto; }
+    }
+  }
 }
