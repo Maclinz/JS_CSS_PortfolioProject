@@ -1,4 +1,4 @@
-@import './mixins';
+@import '../mixins';
 
 .cv {
   display: flex;
@@ -52,6 +52,8 @@
       font-weight: 800;
       font-size: 6rem;
       z-index: -5;
+      @media screen and (max-width: 600px) { font-size: 2.5rem; }
     }
+    @media screen and (max-width: 600px) { font-size: 2rem; }
   }
 }

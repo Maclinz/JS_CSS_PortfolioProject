@@ -1,4 +1,4 @@
-@import './mixins';
+@import '../mixins';
 
 #controls {
   position: fixed;
@@ -21,6 +21,7 @@
       color: var(--color-grey-1);
       pointer-events: none;
     }
+    @media screen and (max-width: 600px) { margin: 1rem 0.25rem; }
   }
   .active-button {
     background-color: var(--color-secondary);
@@ -45,4 +46,5 @@
     color: var(--color-grey-1);
     pointer-events: none;
   }
+  @media screen and (max-width: 600px) { @include round-icon(); }
 }

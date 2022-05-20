@@ -1,8 +1,9 @@
-@import './mixins';
+@import '../mixins';
 
 #contact-content {
   display: flex;
   padding-top: 3.5rem;
+  @media screen and (max-width: 1200px) { text-align: center; }
   &-left {
     flex: 2;
     h4 {
@@ -18,14 +19,26 @@
       .contact-item {
         @include flex-center-vertical;
         justify-content: space-between;
-        > p { margin: 0.25rem 0; }
+        > p {
+          margin: 0.25rem 0;
+          @media screen and (max-width: 1200px) { font-size: 15px; }
+        }
         &-icon p {
           display: grid;
           grid-template-columns: 40px 1fr;
+          @media screen and (max-width: 1200px) {
+            font-size: 15px;
+            color: var(--color-grey-variation-grey);
+          }
           i {
             @include flex-center-vertical;
             font-size: 1.25rem;
+            @media screen and (max-width: 1200px) { grid-template-columns: 25px 1fr; }
           }
+        }
+        @media screen and (max-width: 1200px) {
+          flex-direction: column;
+          margin: 1rem 0;
         }
       }
     }
@@ -48,6 +61,7 @@
           }
         }
       }
+      @media screen and (max-width: 1200px) { justify-content: center; }
     }
   }
   &-right {
@@ -69,7 +83,14 @@
       &-flex {
         display: flex;
         gap: 1.5rem;
+        label { width: 100%;}
+        @media screen and (max-width: 1200px) { flex-direction: column; }
       }
     }
+    @media screen and (max-width: 1200px) {
+      margin-left: 0;
+      margin-top: 2.5rem;
+    }
   }
+  @media screen and (max-width: 1600px) { flex-direction: column; }
 }

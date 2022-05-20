@@ -1,4 +1,4 @@
-@import './mixins';
+@import '../mixins';
 
 #about-header {
   @include grid-columns(2);
@@ -44,9 +44,21 @@
         }
       }
     }
+    @media screen and (max-width: 600px) {
+      grid-template-columns: 1fr;
+      padding-bottom: 6rem;
+    }
   }
   &-left {
     padding-right: 5rem;
+    @media screen and (max-width: 1200px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      .cv { align-self: center; }
+    }
     h4 {
       font-size: 2rem;
       text-transform: uppercase;
@@ -55,8 +67,11 @@
       line-height: 2rem;
       padding: 1rem;
       color: var(--color-grey-1);
+      @media screen and (max-width: 1200px) { padding-left: 0; }
     }
+    @media screen and (max-width: 1200px) { padding-right: 0; }
   }
+  @media screen and (max-width: 1200px) { grid-template-columns: 1fr; }
 }
 
 #about-statistics {
@@ -85,6 +100,7 @@
         }
       }
     }
+    @media screen and (max-width: 600px) { grid-template-columns: 1fr; }
   }
 }
 
@@ -127,6 +143,10 @@
         }
       }
       &-content { color: var(--color-grey-2); }
+    }
+    @media screen and (max-width: 600px) {
+      grid-template-columns: 1fr;
+      padding-bottom: 6rem;
     }
   }
 }

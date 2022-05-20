@@ -27,7 +27,7 @@ header {
     min-height: 100vh;
     color: var(--color-white);
     overflow: hidden;
-    padding: 0 !important;
+    padding: 0;
 }
 
 section.container {
@@ -37,6 +37,9 @@ section.container {
     left: 0;
     top: 0;
     padding: 3rem 18rem;
+    @media screen and (max-width: 1600px){ padding: 2.75rem 12rem; }
+    @media screen and (max-width: 1200px){ padding: 2.5rem 6rem; }
+    @media screen and (max-width: 600px){ padding: 2.25rem 3rem; }
 }
 
 .container {
@@ -56,11 +59,10 @@ section.container {
     }
 }
 
-@import './controls';
-@import './header';
-@import './components';
-@import './about';
-@import './portfolio';
-@import './blog';
-@import './contact';
-@import './media';
+@import './components/controls';
+@import './sections/header';
+@import './components/components';
+@import './sections/about';
+@import './sections/portfolio';
+@import './sections/blog';
+@import './sections/contact';

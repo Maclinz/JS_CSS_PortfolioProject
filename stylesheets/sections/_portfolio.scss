@@ -1,4 +1,4 @@
-@import './mixins';
+@import '../mixins';
 
 #portfolio {
   &-subtitle {
@@ -10,12 +10,16 @@
     margin-top: 3rem;
     .portfolio-item {
       position: relative;
+      margin: auto;
       &-image {
         img {
-          width: 100%;
+          aspect-ratio: 6/4;
           height: 250px;
           object-fit: cover;
           border-radius: 15px;
+          @media screen and (max-width: 1600px) { height: 275px; }
+          @media screen and (max-width: 1200px) { height: 300px; }
+          @media screen and (max-width: 600px) { height: 225px; }
         }
       }
       &-hover {
@@ -62,6 +66,11 @@
         opacity: 1;
         transform: scale(1);
       }
+    }
+    @media screen and (max-width: 1600px) { grid-template-columns: 1fr 1fr; }
+    @media screen and (max-width: 1200px) {
+      grid-template-columns: 1fr;
+      padding-bottom: 6rem;
     }
   }
 }

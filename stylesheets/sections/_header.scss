@@ -1,4 +1,4 @@
-@import './mixins';
+@import '../mixins';
 
 #header-content {
   width: 100%;
@@ -15,6 +15,7 @@
       @include absolute-top-left;
       z-index: -5;
       clip-path: polygon(0 0, 45% 0, 80% 100%, 0% 100%);
+      @media screen and (max-width: 1200px){ display: none; }
     }
     &-image {
       border-radius: 15px;
@@ -31,6 +32,10 @@
         filter: grayscale(100%);
         &:hover { filter: grayscale(0%); }
       }
+      @media screen and (max-width: 600px) {
+        width: 90%;
+        margin-inline: auto;
+      }
     }
   }
   &-right {
@@ -41,10 +46,23 @@
     h1 {
       font-size: 2rem;
       span { color: var(--color-secondary); }
+      @media screen and (max-width: 600px) { font-size: 2.5rem;}
     }
     p {
       margin: 1.5rem 0;
       line-height: 2rem;
     }
+    @media screen and (max-width: 1200px) {
+      grid-row: 1;
+      width: 90%;
+      margin: 2.5rem auto;
+      padding : 0;
+    }
+  }
+  @media screen and (max-width: 1200px){
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+    text-align: center;
+    .cv { align-self: center;}
   }
 }
