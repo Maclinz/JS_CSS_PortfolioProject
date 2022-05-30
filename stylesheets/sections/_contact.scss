@@ -1,0 +1,102 @@
+@import '../mixins';
+
+#contact-content {
+  display: flex;
+  padding-top: 3.5rem;
+  @media screen and (max-width: 1200px) { text-align: center; }
+  &-left {
+    flex: 2;
+    h4 {
+      margin-top: 1rem;
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+    > p {
+      margin: 1rem 0;
+      line-height: 2rem;
+    }
+    &-information {
+      .contact-item {
+        @include flex-center-vertical;
+        justify-content: space-between;
+        > p {
+          margin: 0.25rem 0;
+          @media screen and (max-width: 1200px) { font-size: 15px; }
+        }
+        &-icon p {
+          display: grid;
+          grid-template-columns: 40px 1fr;
+          @media screen and (max-width: 1200px) {
+            font-size: 15px;
+            color: var(--color-grey-variation-grey);
+          }
+          i {
+            @include flex-center-vertical;
+            font-size: 1.25rem;
+            @media screen and (max-width: 1200px) { grid-template-columns: 25px 1fr; }
+          }
+        }
+        @media screen and (max-width: 1200px) {
+          flex-direction: column;
+          margin: 1rem 0;
+        }
+      }
+    }
+    &-social {
+      display: flex;
+      margin-top: 2rem;
+      a {
+        @include flex-center;
+        color: var(--color-white);
+        background-color: var(--color-grey-5);
+        @include round-icon;
+        margin-inline: 0.5rem;
+        transition: var(--transition);
+        &:hover {
+          background-color: var(--color-secondary);
+          color: var(--color-primary);
+          i {
+            @include flex-center;
+            font-size: 1.25rem;
+          }
+        }
+      }
+      @media screen and (max-width: 1200px) { justify-content: center; }
+    }
+  }
+  &-right {
+    flex: 3;
+    margin-left: 3rem;
+    .input-control {
+      margin: 1.5rem 0;
+      input, textarea {
+        border-radius: 30px;
+        font: inherit;
+        padding: .75rem 1.25rem;
+        outline: none;
+        border: none;
+        background-color: var(--color-grey-5);
+        width: 100%;
+        color: var(--color-white);
+        resize: none;
+      }
+      &-flex {
+        display: flex;
+        gap: 1.5rem;
+        label { width: 100%;}
+        @media screen and (max-width: 1200px) { flex-direction: column; }
+      }
+    }
+    @media screen and (max-width: 1600px) {
+      margin-left: 0;
+      margin-top: 2.5rem;
+    }
+  }
+  @media screen and (max-width: 1600px) { flex-direction: column; }
+  @media screen and (max-width: 1200px) {
+    .cv {
+      width: 100%;
+      &-link{ margin-inline: auto; }
+    }
+  }
+}

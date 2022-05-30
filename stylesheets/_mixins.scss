@@ -1,0 +1,36 @@
+@mixin flex-center-vertical {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-center {
+  @include flex-center-vertical;
+  justify-content: center;
+}
+
+@mixin round-icon($size:50px)  {
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+}
+
+@mixin absolute-top {
+  position: absolute;
+  top: 0;
+}
+
+@mixin absolute-top-left {
+  @include absolute-top;
+  left: 0;
+}
+
+@mixin absolute-top-right {
+  @include absolute-top;
+  right: 0;
+}
+
+@mixin grid-columns($columns) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  grid-gap: 2rem;
+}

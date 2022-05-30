@@ -1,0 +1,50 @@
+@import '../mixins';
+
+#controls {
+  position: fixed;
+  z-index: 10;
+  top: 50%;
+  right: 3%;
+  @include flex-center;
+  flex-direction: column;
+  transform: translateY(-50%);
+  .control {
+    padding: 1rem;
+    cursor: pointer;
+    background-color: var(--color-grey-5);
+    @include round-icon(55px);
+    @include flex-center;
+    margin: .75rem 0;
+    box-shadow: var(--box-shadow);
+    i {
+      font-size: 1.25rem;
+      color: var(--color-grey-1);
+      pointer-events: none;
+    }
+    @media screen and (max-width: 600px) { margin: 1rem 0.25rem; }
+  }
+  .active-button {
+    background-color: var(--color-secondary);
+    transition: var(--transition);
+    i { color: var(--color-white); }
+  }
+}
+
+#switch-mode {
+  top: 5%;
+  right: 2.5%;
+  @include round-icon(70px);
+  border: 2px solid var(--color-grey-1);
+  background-color: var(--color-grey-5);
+  cursor: pointer;
+  position: fixed;
+  @include flex-center;
+  box-shadow: 0 3px 15px rgba(0,0,0,.3);
+  transition: all .1s ease-in-out;
+  i {
+    font-size: 1.75rem;
+    color: var(--color-grey-1);
+    pointer-events: none;
+  }
+  @media screen and (max-width: 600px) { @include round-icon(); }
+}
