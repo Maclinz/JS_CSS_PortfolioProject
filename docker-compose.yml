@@ -1,0 +1,23 @@
+version: '3'
+services:
+  portfolio:
+    container_name: portfolio_c
+    image: nginx:stable
+    volumes:
+      - ./main:/code
+      - ./site.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - "2000:90"
+    network_mode: "ngnx-proxy"
+    environment:
+      - VIRTUAL_HOST=localhost        
+
+volumes:
+  main:
+
+networks:
+  default:
+    external:
+      name: ngnx-proxy
+
+  
