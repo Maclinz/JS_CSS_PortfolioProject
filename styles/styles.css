@@ -102,17 +102,18 @@ section {
   padding: 1rem;
   cursor: pointer;
   background-color: var(--color-grey-4);
-  width: 55px;
-  height: 55px;
+  width: 100px;
+  height: 45px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0.7rem 0;
   box-shadow: var(--box-shadow-1);
+  font-size: 1vw;
 }
 .controls .control i {
-  font-size: 1.2rem;
+  font-size: 1vw;
   color: var(--color-grey-2);
   pointer-events: none;
 }
@@ -739,9 +740,11 @@ section {
     transform: translateX(-50%);
     width: 100%;
     background-color: var(--color-grey-5);
+    
   }
   .controls .control {
     margin: 1rem 0.3rem;
+    font-size: 2vw;
   }
 
   .about-container {
