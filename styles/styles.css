@@ -39,7 +39,7 @@ body {
   background-color: var(--color-primary);
   font-family: "Poppins", sans-serif;
   font-size: 1.1rem;
-  color: var(--color-grey0);
+  color: var(--color-white);
   transition: all 0.4s ease-in-out;
 }
 
@@ -111,6 +111,7 @@ section {
   margin: 0.7rem 0;
   box-shadow: var(--box-shadow-1);
   font-size: 1vw;
+  color: var(--color-grey-2);
 }
 .controls .control i {
   font-size: 1vw;
