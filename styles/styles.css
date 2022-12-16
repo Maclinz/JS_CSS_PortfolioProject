@@ -173,7 +173,7 @@ section {
 }
 .header-content .left-header .image {
   border-radius: var(--br-sm-2);
-  height: 90%;
+  height: 50%;
   width: 68%;
   margin-left: 4rem;
   background-color: var(--color-black);
@@ -733,6 +733,7 @@ section {
   .header-content .left-header .image {
     margin: 0 auto;
     width: 90%;
+    height: 90%;
   }
 
   .controls {
